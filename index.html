@@ -6,10 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kapitel 11 - Inhaltsfelder</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 
 <body>
-
+    <header>
+        <nav>
+            <div class="button">
+                <button class="btn0">
+                    <a class="gFa" href="#1">
+                        Accordions
+                    </a>
+                </button>
+            </div>
+            <div class="button">
+                <button class="btn1">
+                    <a class="gFa" href="#2">
+                        Tabs
+                    </a>
+                </button>
+            </div>
+            <div class="button">
+                <button class="btn2">
+                    <a class="gFa" href="#3">
+                        modale Fenster
+                    </a>
+                </button>
+            </div>
+            <div class="button">
+                <button class="btn3">
+                    <a class="gFa" href="#4">
+                        Diashow
+                    </a>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titel">
+            Kapitel 11 - Inhaltsfelder
+        </h1>
+        <p>
+            Im elften Kapitel des Javascript & jQuery Buches von Jon Duckett geht es um Inhaltsfelder. Bei den
+            Inhaltsfeldern unterscheidet man zwischen <b>Ziehharmonika-Anzeigen(Accordions), Registerkarten(Tabs),
+                modalen Fenstern</b> und <b>interaktiven Diashows.</b> <br> Diese einzelnen Arten können mit ziemlich
+            anspruchsvollen jQuery-Plug-Ins arbeiten, jedoch ist deren Verwendungen nicht von Notwendigkeit, auch ohne
+            die Plug-Ins kann man jene Elemente gestalten, wie sie auf professionellen Webseiten einsehbar sind.
+        </p>
+        <h1 id="1">
+            Accordions
+        </h1>
+        <p>
+            Akkordeons oder auch Zeilharmonika-Anzeige sind "aufklappbare" Textfelder. <br> Sie basieren auf das
+            bekannte
+            &lt;ul>-Element, darin enthält dann jedes &lt;li>-Element zwei weitere Elemente: <br> Nämlich ein
+            &lt;button>-Element für die sichtbare Beschriftung <br> und ein verstecktes Feld in Form eines
+            &lt;div>-Elements. <br> <br> Wenn man diese Theorie richtig anwendet, sollte es etwa so aussehen:
+        </p>
+        <ul class="accordion">
+            <li>
+                <button class="accordion-titel">
+                    Hardware
+                </button>
+                <div class="accordion-inhalt">
+                    Hardware corresponds to all tangible parts of a computer: its electrical, electronic,
+                    electromechanical and mechanical components; 1 its cables, cabinets or boxes, peripherals of all
+                    kinds and any other physical element involved; conversely, the software is intangible and is called
+                    software. The term is typical of the English language (literally translated: hard parts), its
+                    translation into Spanish does not have a consistent meaning, so it has been adopted as it is and
+                    sounds; the Royal Spanish Academy defines it as “a set of components that make up the material part
+                    of a computer” .2 Although the term is the most common, it applies not only to a computer as it is
+                    known, , a robot, a mobile phone, a camera or a media player also have hardware (and software) . The
+                    term hardware also does not correspond to an exact synonym of “computer components”, since the
+                    latter definition is usually confined exclusively to internal parts and elements, regardless of
+                    peripherals.
+                </div>
+            </li>
+            <li>
+                <button class="accordion-titel">
+                    Middleware
+                </button>
+                <div class="accordion-inhalt">
+                    Middleware is software that assists an application to interact or communicate with other
+                    applications, software, networks, hardware and / or operating systems. This simplifies the work of
+                    programmers in the complex task of generating the connections that are needed in distributed
+                    systems. This process is also called middleware engineering. This provides a solution that improves
+                    the quality of service, security, message sending, service directory, etc. 1It functions as a
+                    distributed software abstraction layer, which sits between the application layers and the lower
+                    layers (operating system and network). The middleware abstracts from the complexity and
+                    heterogeneity of the underlying communications networks as well as the operating systems and
+                    programming languages, providing an API for easy programming and management of distributed
+                    applications. Depending on the problem to be solved and the necessary functions, different types of
+                    middleware services will be useful. Generally the client-side middleware is implemented by the
+                    Operating System, which has the libraries that execute all the functionalities for the communication
+                    through the network.
+                </div>
+            </li>
+            <li>
+                <button class="accordion-titel">
+                    Software
+                </button>
+                <div class="accordion-inhalt">
+                    It is known as software to the logical equipment or software of a digital computer; comprises the
+                    set of necessary logical components that make it possible to perform specific tasks, as opposed to
+                    the physical components, which are called hardware.Logical components include, among many others,
+                    computer applications; such as the word processor, which allows the user to perform all tasks
+                    concerning the editing of texts; the system software, such as the operating system, which basically
+                    allows the rest of the programs to function properly, also facilitating the interaction between the
+                    physical components and the rest of the applications, and providing an interface for the user.
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script>
+    <script src="script.js">
+    </script>
+    <footer>
+        Website von Robin Ehrbar
+    </footer>
 </body>
 
 </html>

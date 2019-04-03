@@ -1,0 +1,212 @@
+/* Scroll Animation beim Klicken auf einen Link */
+* {
+    scroll-behavior: smooth;
+}
+
+/* Schriftart und Schriftgrösse generell */
+main {
+    font-family: helvetica;
+    font-size: 115%;
+}
+
+/* Dekoration Hauptteil */
+body {
+    background: rgb(66, 170, 240);
+    margin: 5% 20%;
+    padding: 2%;
+    box-shadow: 0px 0px 35px 35px rgba(62,85,230,1);
+    border: 2px solid black;
+}
+
+/* Position Navigation */
+header {
+    position: fixed;
+    right: 0;
+}
+
+/* Design Footer */
+footer {
+    background: rgb(35, 110, 223);
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    position: fixed;
+    margin-bottom: 0;
+    padding: 10px 0;
+    border: 2px solid black;
+}
+
+/* Titel unterstrichen */
+h1, h2 {
+    text-decoration: underline;
+}
+
+/* Seitenüberschrift grösser */
+.titel {
+    font-size: 50px;
+}
+
+/* Bilder sollen 75% der Breite einnehmen + Rahmen */
+img {
+    width: 75%;
+    border: 2px solid black;
+}
+
+/* Design für Code */
+code {
+    background: rgb(0, 0, 0);
+    font-style: italic;  
+    border: 2px solid rgb(112, 112, 112);
+    border-radius: 7px;
+    display: block;
+    margin: 0 4%;
+    color: white;
+    padding: 7px;
+}
+
+/* Wenn normaler Text unterstrichen sein soll */
+.underline {
+    text-decoration: underline;
+}
+
+/* Links im Text oder Listen soll dick sein */
+p a, dd a {
+    font-weight: bold;
+}
+
+/* Navigationsleiste 15 Pixel von rechts anzeigen */
+nav {
+    margin-right: 15px;
+}
+
+/* Nav in einer Zeile anzeigen */
+.button {
+position: relative;
+display: inline-block;
+}
+
+/* Hintergrundfarbe von den Knöpfen beim hovern verdunkeln */
+.button:hover .btn0 {
+    background-color: rgb(170, 0, 0);
+    box-shadow: 9px -9px 10px -4px  rgb(170, 0, 0);
+}
+.button:hover .btn1 {
+    background-color: rgb(35, 143, 31);
+    box-shadow: 9px -9px 10px -4px rgb(35, 143, 31)
+}
+.button:hover .btn2 {
+    background-color: rgb(91, 5, 126);
+    box-shadow: 9px -9px 10px -4px rgb(91, 5, 126);
+}
+.button:hover .btn3 {
+    background-color: rgb(10, 129, 129);
+    box-shadow: 9px -9px 10px -4px rgb(10, 129, 129);
+}
+
+/* Buttons Design */
+  .btn0 {
+    background-color: rgb(219, 13, 13);
+    color: white;
+    padding: 16px 0;
+    font-size: 16px;
+    border: 2px solid black;
+    box-shadow: 9px -9px 10px -4px rgb(219, 13, 13);
+    z-index: 0;
+}
+.btn1 {
+    background-color: rgb(29, 173, 0);
+    color: white;
+    padding: 16px 0;
+    font-size: 16px;
+    border: 2px solid black;
+    box-shadow: 9px -9px 10px -4px rgb(29, 173, 0);
+}
+.btn2 {
+    background-color: rgb(125, 26, 190);
+    color: white;
+    padding: 16px 0;
+    font-size: 16px;
+    border: 2px solid black;
+    box-shadow: 9px -9px 10px -4px rgb(125, 26, 190);
+}
+.btn3 {
+    background-color: rgb(7, 153, 163);
+    color: white;
+    padding: 16px 0;
+    font-size: 16px;
+    border: 2px solid black;
+    box-shadow: 9px -9px 10px -4px rgb(7, 153, 163);
+}
+
+/* Link soll nicht das Link Design übernehmen */
+button a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* Tabellentitel Design */
+th {
+    background: rgb(76, 125, 240);
+    border: 2px solid black;
+    padding: 2%;
+    width: 50%;
+}
+
+/* Tabellenfelder Design */
+td {
+    padding: 2%;
+    border: 2px solid black;
+    background: rgb(58, 148, 247);
+    text-align: center;
+}
+
+/* Stellt divs nebeneinander dar */
+div {
+    display: inline;
+}
+
+/* Ganze Fläche anklickbar */
+.gFa {
+    width: 100%;
+    padding: 16px;
+} 
+
+/* Akkordeon-Inhalt standardmässig ausblenden */
+.accordion-inhalt {
+    display: none;
+}
+
+/* Media-Query 1100px */
+@media (max-width: 1100px) {
+    body {
+        margin: 3% 10% 10% 10%;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+/* Media-Query 768px */
+@media (max-width: 768px) {
+    .button {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 2px 10px 2px 2px;
+    }
+    body {
+        font-size: 60%;
+        margin: 3% 5% 15% 5%;
+    }
+    .titel {
+        font-size: 30px;
+    }
+    .btn0, .btn1, .btn2, .btn3 {
+        font-size: 10px;
+        padding: 7px 4px;
+        box-shadow: none;
+    }
+}
