@@ -13,29 +13,22 @@
     <header>
         <nav>
             <div class="button">
-                <button class="btn0">
+                <button class="btn1">
                     <a class="gFa" href="#1">
                         Accordions
                     </a>
                 </button>
             </div>
             <div class="button">
-                <button class="btn1">
+                <button class="btn2">
                     <a class="gFa" href="#2">
                         Tabs
                     </a>
                 </button>
             </div>
             <div class="button">
-                <button class="btn2">
-                    <a class="gFa" href="#3">
-                        modale Fenster
-                    </a>
-                </button>
-            </div>
-            <div class="button">
                 <button class="btn3">
-                    <a class="gFa" href="#4">
+                    <a class="gFa" href="#3">
                         Diashow
                     </a>
                 </button>
@@ -141,9 +134,47 @@
             </h1>
             <p>
                 Oder auch Tabs genannt, sind auch wie bei den Akkordeons vorerst verborgene Textelemente die mit einem
-                Klick ein- und ausgeblendet werden können. <br> Es gibt immer mehrere Reiter, und je nach dem welcher
-                ausgewählt ist, wird entsprechend dessen Inhalt angezeigt. Die Registerkarten werden innerhalb von
-                einem &lt;ul>-Element erstellt. Darin sind bekanntlich &lt;li>-Elemente
+                Klick ein- und ausgeblendet werden können. <br> <br> Es gibt immer mehrere Reiter, und je nach dem
+                welcher
+                ausgewählt ist, wird entsprechend dessen Inhalt angezeigt. Die Reiter werden innerhalb von
+                einem &lt;ul>-Element erstellt. Darin sind bekanntlich &lt;li>-Elemente, darin verschachtelt sind dann
+                noch zuletzt &lt;a> Elemente, welche auf den Inhalt verweisen. Wenn man die ungeordnete Liste
+                geschlossen hat, kann man die Inhalte der Reiter innerhalb von &lt;div>-Elementen schreiben, man muss
+                hierbei beachten, dass die ID, welche man den divs vergibt die gleiche ist wie die, die man mit den
+                &lt;a>-Elementen weiter oben angesprochen hat. <br> <br> So würde das Resultat dann aussehen:
+            </p>
+            <ul class="tab-list">
+                <li class="active"><a class="tab-control" href="#tab-1">HTML</a></li>
+                <li><a class="tab-control" href="#tab-2">CSS</a></li>
+                <li><a class="tab-control" href="#tab-3">Javascript</a></li>
+            </ul>
+            <div class="tab-panel active" id="tab-1">Vor der Entwicklung des World Wide Web und dessen Bestandteilen, zu
+                denen auch HTML gehört, war es nicht möglich, Dokumente auf elektronischem Weg einfach, schnell und
+                strukturiert zwischen mehreren Personen auszutauschen und miteinander effizient zu verknüpfen. Man
+                benötigte neben Übertragungsprotokollen auch eine einfach zu verstehende Textauszeichnungssprache. Genau
+                hier lag der Ansatzpunkt von HTML. Um Forschungsergebnisse mit anderen Mitarbeitern der Europäischen
+                Organisation für Kernforschung (CERN) zu teilen und von den beiden Standorten in Frankreich und in der
+                Schweiz aus zugänglich zu machen, entstand 1989 am CERN ein Projekt, welches sich mit der Lösung dieser
+                Aufgabe beschäftigte. Am 3. November 1992 erschien die erste Version der HTML-Spezifikation.</div>
+            <div class="tab-panel" id="tab-2">Einen ersten Vorschlag für Web-Stylesheets gab es 1993, mehrere weitere
+                folgten bis 1995. Am 10. Oktober 1994 veröffentlichte Håkon Wium Lie, ein Mitarbeiter von Tim
+                Berners-Lee am CERN, den ersten Vorschlag für „Cascading HTML style sheets“,[3] die er später abgekürzt
+                als „CHSS“ bezeichnet.[4] Bert Bos arbeitete zu dieser Zeit an der Implementierung eines Browsers namens
+                Argo, der seine eigene Stylesheet-Sprache benutzte. Die beiden entschieden sich, CSS gemeinsam zu
+                entwickeln. Es gab zu dieser Zeit auch andere Sprachen mit dem gleichen Ziel, die Erfinder von CSS
+                brachten aber als erste die Idee auf, Regeln zu definieren, die über mehrere Stylesheets hinweg vererbt
+                werden konnten.</div>
+            <div class="tab-panel" id="tab-3">Die Syntax von JavaScript ähnelt jener der C-Abkömmlinge, wozu auch Java
+                gehört. Trotz der Namens- und syntaktischen Ähnlichkeit hat JavaScript nur geringe Gemeinsamkeiten mit
+                Java, beispielsweise wird Vererbung in JavaScript, anders als in Java, nicht durch Klassen, sondern
+                durch Prototypen unterstützt.</div>
+            <h1 id="3">
+                Diashow
+            </h1>
+            <p>
+                Eine Diashow kann bekanntlich mehrere Bilder "nebeneinander" abspeichern, also immer eines wird
+                angezeigt und die anderen Bilder sind aufrufbar durch ein klicken oder durch das Abwarten einer gewissen
+                Zeit.
             </p>
         </div>
     </main>

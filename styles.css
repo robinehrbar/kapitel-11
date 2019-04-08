@@ -206,6 +206,42 @@ div {
     border: 1px solid black;
 }
 
+/* Design Registerkarten */
+.tab-panel {
+    display: none;
+}
+.tab-panel.active {
+    display: block;
+    background: #ccc;
+    margin-left: 40px;
+    width: 500px;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    padding: 10px;
+    margin-top: -7px;
+    border: solid 1px #bbb;
+}
+.tab-list li {
+    display: inline;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    background: #eee;
+    padding: 10px;
+    border: solid 1px #bbb;
+}
+.tab-list {
+    margin-top: 40px;
+}
+.tab-list li.active {
+    background: #aaa;
+    margin-bottom: -10px;
+    border: solid 1px #aaa;
+}
+.tab-list li a {
+    color: black;
+    text-decoration: none;
+}
+
 /* Animationen */
 @keyframes animation1 {
     0% {background-color: orange;}
