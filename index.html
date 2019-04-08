@@ -52,8 +52,10 @@
             <p>
                 Im elften Kapitel des Javascript & jQuery Buches von Jon Duckett geht es um Inhaltsfelder. Bei den
                 Inhaltsfeldern unterscheidet man zwischen <b>Ziehharmonika-Anzeigen(Accordions), Registerkarten(Tabs),
-                    modalen Fenstern</b> und <b>interaktiven Diashows.</b> <br> Diese einzelnen Arten können mit ziemlich
-                anspruchsvollen jQuery-Plug-Ins arbeiten, jedoch ist deren Verwendungen nicht von Notwendigkeit, auch ohne
+                    modalen Fenstern</b> und <b>interaktiven Diashows.</b> <br> Diese einzelnen Arten können mit
+                ziemlich
+                anspruchsvollen jQuery-Plug-Ins arbeiten, jedoch ist deren Verwendungen nicht von Notwendigkeit, auch
+                ohne
                 die Plug-Ins kann man jene Elemente gestalten, wie sie auf professionellen Webseiten einsehbar sind.
             </p>
             <h1 id="1">
@@ -130,23 +132,31 @@
                     }});}
             </code>
             <p>
-                Was auch noch geschrieben werden muss (entweder im JS oder einfacher im CSS), ist dass der AkkordeonInhalt
-                standardmässig ausgeblendet sein muss.
+                Was auch noch geschrieben werden muss (entweder im JS oder einfacher im CSS), ist dass der
+                AkkordeonInhalt standardmässig ausgeblendet sein muss. Eine HTML Datei ist wie immer notwendig, auf die
+                CSS Datei kann zwar verzichtet werden, dann sehen die Akkordeons aber einfach nicht sehr schön aus.
+            </p>
+            <h1 id="2">
+                Registerkarten
+            </h1>
+            <p>
+                Oder auch Tabs genannt, sind auch wie bei den Akkordeons vorerst verborgene Textelemente die mit einem
+                Klick ein- und ausgeblendet werden können. <br> Es gibt immer mehrere Reiter, und je nach dem welcher
+                ausgewählt ist, wird entsprechend dessen Inhalt angezeigt. Die Registerkarten werden innerhalb von
+                einem &lt;ul>-Element erstellt. Darin sind bekanntlich &lt;li>-Elemente
             </p>
         </div>
     </main>
 
+    <footer>
+        Website von Robin Ehrbar
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
     </script>
     <script src="script.js">
     </script>
 
-
-    <footer>
-        Website von Robin Ehrbar
-    </footer>
-    
 </body>
 
 </html>
